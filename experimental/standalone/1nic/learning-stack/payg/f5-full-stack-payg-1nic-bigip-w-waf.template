@@ -484,7 +484,7 @@
     "AdvancedWaf1000Mbps": "ami-0165de452b61bdcf7",
     "AdvancedWaf16vCPU": "ami-04306b02f2ca02e82",
     "AdvancedWaf200Mbps": "ami-0ed99f7ebad5a263d",
-    "AdvancedWaf25Mbps": "ami-04027e677eff61a76",
+    "AdvancedWaf25Mbps": "ami-063faedb6c35f003b",
     "AdvancedWaf8vCPU": "ami-0a141895d9aca25e0",
     "Best10000Mbps": "ami-02e9e3a2f3206217c",
     "Best1000Mbps": "ami-03ce933a656a420ea",
@@ -549,7 +549,7 @@
     "AMI": "ami-5f1b553f"
    },
    "us-west-2": {
-    "AMI": "ami-c1e13da1"
+    "AMI": "ami-037e684b1e151a1be"
    }
   }
  },
@@ -880,6 +880,7 @@
   "applicationInstanceType": {
    "AllowedValues": [
     "t1.micro",
+    "t2.micro",
     "m3.medium",
     "m3.xlarge",
     "m2.xlarge",
@@ -888,7 +889,7 @@
     "c3.xlarge"
    ],
    "ConstraintDescription": "Must be a valid EC2 instance type",
-   "Default": "t1.micro",
+   "Default": "t2.micro",
    "Description": "Webserver EC2 instance type",
    "Type": "String"
   },
@@ -976,7 +977,7 @@
     "c5n.4xlarge"
    ],
    "ConstraintDescription": "Must be a valid EC2 instance type for BIG-IP",
-   "Default": "m3.2xlarge",
+   "Default": "m5.xlarge",
    "Description": "AWS instance type",
    "Type": "String"
   },
